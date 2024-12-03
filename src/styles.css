@@ -1,1 +1,189 @@
-/* You can add global styles to this file, and also import other style files */
+@import '~ngx-toastr/toastr';
+
+* {
+    margin: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+header {
+    width: 100vw;
+    /*height: 5vh;*/
+    padding-top: 2vh;
+}
+
+header i {
+    font-size: 30px;
+    padding: 0 10px;
+    color: brown;
+}
+
+header .symbol {
+    width: 20px;
+    height: 25px;
+    display: inline-block;
+    margin-left: 40px;
+    transform: rotate(45deg);
+    background-color: brown
+}
+
+header .title {
+    display: inline-block;
+}
+
+header button {
+    margin-right: 10px;
+}
+
+footer {
+    width: 100vw;
+    height: 5vh;
+    margin-top: 2vh;
+}
+
+footer .footer-content {
+    padding: 5px 0 5px 40px;
+    color: #fff;
+    background-color: brown;
+}
+
+.main {
+    width: 100vw;
+    height: 80%;
+    display: table;
+    background: url('./assets/img/background.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: initial;
+}
+
+.main-content {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.main-title {
+    width: fit-content;
+    padding: 0 255px 0 40px;
+    margin: 3px 0;
+    color: white;
+    background-color: brown;
+}
+
+.main-description {
+    width: fit-content;
+    padding: 0 100px 0 60px;
+    margin: 3px 0;
+    color: white;
+    background-color: black;
+}
+
+.services {
+    width: 100vw;
+    /*height: 40vh;*/
+}
+
+.services h4, .services p {
+    margin-left: 40px;
+}
+
+.services section {
+    display: flex;
+    margin-top: 50px;
+}
+
+.services section .service {
+    width: 25vw;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+}
+
+.services section .service div img {
+    width: 30%;
+    height: auto;
+}
+
+.services section .service div p {
+    text-align: justify;
+}
+
+@media (max-width: 1000px) {
+    .services section .service {
+        padding: 0 2.5vw;
+    }
+
+    .services section .service div h4 {
+        margin: 0;
+    }
+    
+    .services section .service div p {
+        margin: 0;
+    }
+}
+
+@media (max-width: 700px) {
+    * {
+        box-sizing: border-box !important;
+    }
+
+    footer .footer-content {
+        font-size: 10px;
+        padding: 5px;
+        color: #fff;
+        background-color: brown;
+    }
+
+    .main {
+        height: 70%;
+    }
+
+    .main-content {
+        vertical-align: bottom;
+    }
+
+    .main-title {
+        width: fit-content;
+        padding: 0 100px 0 20px;
+        margin: 3px 0;
+        font-size: 15px;
+    }
+    
+    .main-description {
+        width: fit-content;
+        max-width: none;
+        padding: 0 100px 0 30px;
+        margin: 3px 0;
+        font-size: 12px;
+    }
+
+    .services {
+        margin-top: 20px;
+    }
+
+    .services h4, .services p {
+        margin-left: 0;
+    }
+
+    .services section {
+        display: grid;
+        margin-top: 0;
+    }
+
+    .services section .service {
+        width: 100%;
+        padding: 25px 0;
+    }
+
+    .services section .service div img {
+        width: 30%;
+    }
+
+    .services section .service div p {
+        text-align: center;
+    }
+    
+}

@@ -1,0 +1,93 @@
+* {
+  box-sizing: initial !important;
+}
+
+footer {
+  height: auto;
+  padding: 40px 0;
+  margin-top: 0;
+}
+
+footer .footer-content {
+  display: flow-root;
+}
+
+footer .footer-content .contact {
+  float: left;
+}
+
+footer .footer-content section {
+  padding-right: 40px;
+}
+
+footer .footer-content section p {
+  margin-bottom: 0;
+}
+
+.modules-urgent {
+  width: 100vw;
+  height: 50vh;
+  display: table;
+  background: url('/assets/img/background_modules_urgent.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.modules-urgent .urgent-content {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: -webkit-right;
+}
+
+.modules-urgent .urgent-title {
+  width: fit-content;
+  max-width: 30%;
+  margin: 3px 0;
+  padding: 5px 15% 5px 20px;
+  color: white;
+  background-color: black;
+}
+
+.modules-urgent .urgent-main-title {
+  width: fit-content;
+  max-width: 35%;
+  margin: 3px 0;
+  padding: 5px 20% 5px 20px;
+  color: black;
+  background-color: #d3d3d3;
+}
+
+.modules-urgent .urgent-description {
+  width: fit-content;
+  max-width: 40%;
+  margin: 3px 0;
+  padding: 5px 1% 5px 20px;
+  text-align: justify;
+  color: white;
+  background-color: orange;
+}
+
+.services {
+  /*height: 35vh;*/
+  padding-top: 5%;
+}
+
+.services section .service {
+  cursor: auto;
+}
+
+.services section .service i {
+  display: inline-block;
+  padding: 5px;
+}
+
+.services section .service h4 {
+  display: contents;
+}
+
+@media (max-width: 700px) {
+  .urgent-description {
+    max-width: 70% !important;
+  }
+}

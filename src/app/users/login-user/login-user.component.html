@@ -1,0 +1,27 @@
+<app-navbar></app-navbar>
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-lg-6 offset-lg-3">
+            <div class="card text-center">
+                <div class="card-body">
+                    <h3>INICIAR SESIÓN</h3>
+                    <span *ngIf="submitted && loginUser.invalid" class="badge text-bg-danger">TODOS LOS CAMPOS SON OBLIGATORIOS</span>
+                    <form class="mt-4" [formGroup]="loginUser" (ngSubmit)="submitUser()">
+                        
+                        <div class="col mt-3">
+                            <input type="number" class="form-control" formControlName="cedula" placeholder="Cedula">
+                        </div>
+
+                        <div class="col mt-3">
+                            <input type="password" class="form-control" formControlName="password" placeholder="Contraseña">
+                        </div>
+
+                        <div class="col mt-3">
+                            <button type="submit" class="btn btn-success ms-3">Login</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
